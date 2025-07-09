@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deploy your website in less than 60 sec.">
+  <meta property="og:title" content="Moshify">
+  <meta property="og:description" content="website">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://moshified.com">
+  <title>Winnetka-Website</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!--Nav-block-->
+  <header>
+    <nav class="nav collapsible ">
+      <a class="nav__brand"><img src="images/logo.png" alt="Mosh Logo"></a>
+      <svg class="icon icon--white nav__toggler icon__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Home</a></li>
+      <li class="nav__item"><a href="#">Amenities</a></li>
+      <li class="nav__item"><a href="#">Leagues & Tournaments</a></li>
+      <li class="nav__item"><a href="#">Hours & Location</a></li>
+      <li class="nav__item"><a href="#">Lane 33 Bar & Grill </a></li>
+      <li class="nav__item"><a href="#">Pro Shop</a></li>
+      <li class="nav__item"><a href="#">Special Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!--Hero-block-->
+<section class="hero-block block--dark block--skewed-left hero">
+  <div class="container-hero grid grid--2fr-1fr">
+  <header class="block__header hero__content">
+      <h1 class="block__heading">WINNETKA BOWLING CENTER</h1>
+      <p class="hero__tagline">....IT'S ALL HERE FOR YOU!</p>
+      <img class="hero__slogan" src="images/at the bowl.png">
+  </header>
+  <div>
+  <img class="hero__image" src="/images/Winneka-sign.png" alt="">
+  </div>
+</section>
+
+
+<!--carousel-block-->
+<section class="carousel-wraper ">
+  <div class="base-skewed-container">
+    <div class="carousel">
+      <button class="slider-button slider-button-prev" data-slide-direction="prev">&#8592</button>
+      <button class="slider-button slider-button-next" data-slide-direction="next">&#8594</button>
+      <ul class="slides">
+        <li class="slide" data-active-slide>
+          <img src="images/QR Code.jpg" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/league plyer.jpg" alt="Nature Image #3" />       
+         </li>
+        <li class="slide">
+          <img src="images/Happy-Hour-4x6-1.webp" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/bowlingshoes and ball.webp" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/cosmic-bowling-planet_92172-45.avif" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/closed-4th-of-july-coopers-header.jpg" alt="Nature Image #3" />
+        </li>
+      </ul>
+      <div class="slides-circles">
+        <div data-active-slide></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      </div>
+  </div>
+  </section>
+ 
+
+
+<!--Showcase-block-->
+<div class="showcase-container">
+  <section class="block container ">
+    <article class="grid grid--1x2 feature">
+      <div class="callout__double">
+        <div class="callout-double-body">
+            <span class="icon-container">
+            <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+            </span>
+            <h2 class="callout__heading-secondary">Online Reservations</h2>
+            <p class="callout__double-text"> More than just bowling...<br>
+              *Billards: We offer four regular size billiars tables and one snooker table.<br>
+              *Lane 33 Bar & Grill: Located inside the Winnetka Bowl. Live kareoky and nightly drink specials<br>
+              *Arcade </p>
+              <a href="#" class="btn btn--secondary">Reserve Now!</a>
+        </div>
+        </div>
+        <div class="callout__double">
+          <div class="callout-double-body">
+              <span class="icon-container">
+              <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+              </svg>
+              </span>
+              <h2 class="callout__heading-secondary">Join Our Email Club</h2>
+              <p class="callout__double-text"> More than just bowling...<br>
+                *Billards: We offer four regular size billiars tables and one snooker table.<br>
+                *Lane 33 Bar & Grill: Located inside the Winnetka Bowl. Live kareoky and nightly drink specials<br>
+                *Arcade </p>
+                <a href="#" class="btn btn--secondary">Join Now!</a>
+          </div>
+          </div>
+    </article>
+  </section>
+</div>
+
+
+<!--Prices-Block-->
+<section class="block block--dark block-showcase">
+  <div class="block__header">
+    <h2 class="block__heading">
+    <img class="mini--icons" src="images/bowling-pin-svgrepo-com.svg" alt="">
+    BOWLING PRICES
+  </h2> 
+    <container class="container grid grid--1x2">
+    <picture class="block-showcase__image">
+
+    <!-- TO DO
+      <source type="image/webp" srcset="images/ipad1x.webp 1x, images/ipad@2x.webp 2x"/>
+    <source type="image/png" srcset="images/ipad1x.png 1x, images/ipad@2x.png 2x"/> -->
+    <img class="block-showcase__image" src="images/bowlingshoes and ball.webp" alt="">
+    </picture>
+    <ul class="list price__list">
+
+      <div class="media__body">
+      <h3 class="media__title">Monday - Thursday 9:00am - 5:00pm</h3>
+      <ul>
+        <li class="list"><p>By Game: $4.50 per person per game, $4.50 shoe rental.</p></li>
+        <li class="list"><p>By Hour: $28.00 per person per lane, $4.50 shoe rental.</p></li>
+      </ul>
+      </div>
+    
+      <div class="media__body">
+        <h3 class="media__title">Monday - Thursday 5:00pm - Untill Close</h3>
+        <ul>
+          <li class="list"><p>By Game: $6.00 per person per game, $4.50 shoe rental.</p></li>
+          <li class="list"><p>By Hour: $35.00 per person per lane, $4.50 shoe rental.</p></li>
+        </ul>
+      </div>
+
+      <div class="media__body">
+        <h3 class="media__title">Friday 9:00am - 5:00pm</h3>
+        <ul>
+          <li class="list"><p>By Game: $3.00 per person per game, $4.50 shoe rental.</p></li>
+        </ul>
+      </div>
+    
+      <div class="media__body">
+        <h3 class="media__title">Friday after 5:00pm <br>
+        Saturday, Sundays and all Federal holidays 9:00am - until Close</h3>
+        <ul>
+          <li class="list"><p>By Game: $7.00 per person per game, $4.50 shoe rental.</p></li>
+          <li class="list"><p>By Hour: $45.00 per person per lane, $4.50 shoe rental.</p></li>
+        </ul>
+      </div>
+    </ul>
+</container>
+</div>
+<div class="warning--note">
+  <p>
+   JOIN US FOR COSMIC BOWLING! FRIDAYS & SATURDAYS!
+  </p>
+<div class="warning--note">
+  <p>
+    DUE TO LEAGUE BOWLING THERE IS NO LANE AVAILABILITY ON MONDAY THROUGH THURSDAY
+    FROM 5:00 P.M. UNTIL 9:00 P.M.  LIMITED AVAILABILITY ON TUESDAY 9:00 P.M.
+    UNTIL CLOSE
+  </p>
+</div>
+</section>
+
+ <!--Location-Block-->
+ <section class="location"> 
+  <container class="grid grid--1x2">
+  <div class="map-wrapper">
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" 
+      marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=20122 Vanowen St.&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+     </iframe><a href="https://embed-googlemap.com">google map embed html</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas 
+    {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+      </div>
+  <div class="directions">
+      <h2 class="direction__heading">Hours & Location</h2>
+      <p class="address">Address: 20122 Vanowen St <br>
+      Winnetka, CA 91306</p>
+<div class="hours__service">
+  <ul class="list">
+    <li class="list__item">Mon: 9:00am-Midnight </li>
+    <li class="list__item">Tues: 9:00am-Midnight </li>
+    <li class="list__item">Wed: 9:00am-Midnight </li>
+    <li class="list__item">Thur: 9:00am-Midnight </li>
+    <li class="list__item">Fri: 9:00am-1:00am </li>
+    <li class="list__item">Sat: 9:00am-1:00am </li>
+    <li class="list__item">Sun: 9:00am-Midnight </li>
+  </ul>
+</div>
+</div>
+</container>
+</section>
+
+
+  <!--Footer-Block-->
+  <footer class="block block--dark footer">
+    <div class="grid footer__sections">
+    <section class="collapsible collapsible--expanded footer__section">
+      <header class="collapsible__header">
+      <h2 class="collapsible__heading footer__heading">Contact Us</h2>
+      <div class="icon icon--white collapsible__chevron">
+      <img src="./images/chevron.svg" alt="">
+      </div>
+      </header>
+  
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">WINNETKA BOWL</a></li>
+          <li><a href="#">Phone:(818)-340-5190</a></li>
+          <li><a href="#">Email:winnetkabowl@hotmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+        
+    <section class="collapsible footer__section">
+      <header class="collapsible__header ">
+      <h2 class="collapsible__heading footer__heading">Jobs</h2>
+      <div class="icon icon--white collapsible__chevron">
+      <img src="./images/chevron.svg" alt="">
+      </div>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Application</a></li>
+        </ul>
+      </div>
+    </section>
+       
+    <section class="collapsible footer__section">
+      <header class="collapsible__header ">
+      <h2 class="collapsible__heading footer__heading">Privacy Policy</h2>
+      <div class="icon icon--white collapsible__chevron">
+      <img src="./images/chevron.svg" alt="">
+      </div>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Policy Statement</a></li>
+        </ul>
+      </div>
+     </section>
+      
+    <section class="collapsible footer__section">
+      <header class="collapsible__header">
+      <h2 class="collapsible__heading footer__heading">Safety Rules Do's and Dont's</h2>
+      <div class="icon icon--white collapsible__chevron">
+      <img src="./images/chevron.svg" alt="">
+      </div>
+      </header>
+      <div class="collapsible__content">
+       <ul class="list">
+        <li><a href="#">Safety Rules Do's and Dont's </a></li>
+        <li><a href="#">Transfer</a></li>
+        <li><a href="#">Free Domain</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="footer__brand">
+    <img src="images/logo.png" alt="Winnetka Bowl Logo">
+    <p class="footer__copyright">Copyright 2025 Elvia Gomez</p>
+  </section>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
