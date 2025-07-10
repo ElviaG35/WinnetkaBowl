@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Deploy your website in less than 60 sec.">
-  <meta property="og:title" content="Moshify">
+  <meta name="Winnetka Bowl, bowling leagues, arcade,Lane 33" content="Winnetka Bowl">
+  <meta property="og:title" content="Winnetka Bowl">
   <meta property="og:description" content="website">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://moshified.com">
@@ -23,18 +23,18 @@
       </svg>
       <ul class="list nav__list collapsible__content">
       <li class="nav__item"><a href="#">Home</a></li>
-      <li class="nav__item"><a href="#">Amenities</a></li>
-      <li class="nav__item"><a href="#">Leagues & Tournaments</a></li>
-      <li class="nav__item"><a href="#">Hours & Location</a></li>
-      <li class="nav__item"><a href="#">Lane 33 Bar & Grill </a></li>
-      <li class="nav__item"><a href="#">Pro Shop</a></li>
-      <li class="nav__item"><a href="#">Special Events</a></li>
+      <li class="nav__item"><a href="/about-us.html">About US</a></li>
+      <li class="nav__item"><a href="/League.html">Leagues & Tournaments</a></li>
+      <li class="nav__item"><a href="#hours-location">Hours & Location</a></li>
+      <li class="nav__item"><a href="/lane33.html">Lane 33 Bar & Grill </a></li>
+      <li class="nav__item"><a href="/pro-shop.html">Pro Shop</a></li>
+      <li class="nav__item"><a href="/special-events.html">Special Events</a></li>
       </ul>
     </nav>
   </header>
 
 <!--Hero-block-->
-<section class="hero-block block--dark block--skewed-left hero">
+<section class="hero-block block--dark">
   <div class="container-hero grid grid--2fr-1fr">
   <header class="block__header hero__content">
       <h1 class="block__heading">WINNETKA BOWLING CENTER</h1>
@@ -42,20 +42,20 @@
       <img class="hero__slogan" src="images/at the bowl.png">
   </header>
   <div>
-  <img class="hero__image" src="/images/Winneka-sign.png" alt="">
+  <img class="hero__image" src="/images/Winneka-sign.png" alt="winnetka sign">
   </div>
 </section>
 
 
 <!--carousel-block-->
-<section class="carousel-wraper ">
-  <div class="base-skewed-container">
+<section class="carousel-wraper">
+  <div class="container">
     <div class="carousel">
       <button class="slider-button slider-button-prev" data-slide-direction="prev">&#8592</button>
       <button class="slider-button slider-button-next" data-slide-direction="next">&#8594</button>
-      <ul class="slides">
+      <ul class="block slides">
         <li class="slide" data-active-slide>
-          <img src="images/QR Code.jpg" alt="Nature Image #3" />        
+          <img class="slide-img" src="images/QR Code.jpg" alt="Nature Image #3" />        
         </li>
         <li class="slide">
           <img src="images/league plyer.jpg" alt="Nature Image #3" />       
@@ -90,7 +90,7 @@
 
 <!--Showcase-block-->
 <div class="showcase-container">
-  <section class="block container ">
+  <section class="block container">
     <article class="grid grid--1x2 feature">
       <div class="callout__double">
         <div class="callout-double-body">
@@ -128,7 +128,7 @@
 
 
 <!--Prices-Block-->
-<section class="block block--dark block-showcase">
+<section class="block block--dark block-showcase" >
   <div class="block__header">
     <h2 class="block__heading">
     <img class="mini--icons" src="images/bowling-pin-svgrepo-com.svg" alt="">
@@ -145,7 +145,8 @@
     <ul class="list price__list">
 
       <div class="media__body">
-      <h3 class="media__title">Monday - Thursday 9:00am - 5:00pm</h3>
+      <h3 class="media__title">Monday - Thursday<br>
+      9:00am - 5:00pm</h3>
       <ul>
         <li class="list"><p>By Game: $4.50 per person per game, $4.50 shoe rental.</p></li>
         <li class="list"><p>By Hour: $28.00 per person per lane, $4.50 shoe rental.</p></li>
@@ -153,7 +154,7 @@
       </div>
     
       <div class="media__body">
-        <h3 class="media__title">Monday - Thursday 5:00pm - Untill Close</h3>
+        <h3 class="media__title">Monday - Thursday <br>5:00pm - Untill Close</h3>
         <ul>
           <li class="list"><p>By Game: $6.00 per person per game, $4.50 shoe rental.</p></li>
           <li class="list"><p>By Hour: $35.00 per person per lane, $4.50 shoe rental.</p></li>
@@ -192,7 +193,7 @@
 </section>
 
  <!--Location-Block-->
- <section class="location"> 
+ <section id="hours-location" class="location"> 
   <container class="grid grid--1x2">
   <div class="map-wrapper">
     <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" 
@@ -204,7 +205,7 @@
       <h2 class="direction__heading">Hours & Location</h2>
       <p class="address">Address: 20122 Vanowen St <br>
       Winnetka, CA 91306</p>
-<div class="hours__service">
+  <div class="hours__service">
   <ul class="list">
     <li class="list__item">Mon: 9:00am-Midnight </li>
     <li class="list__item">Tues: 9:00am-Midnight </li>
@@ -278,8 +279,7 @@
       <div class="collapsible__content">
        <ul class="list">
         <li><a href="#">Safety Rules Do's and Dont's </a></li>
-        <li><a href="#">Transfer</a></li>
-        <li><a href="#">Free Domain</a></li>
+       
       </ul>
       </div>
     </section>
