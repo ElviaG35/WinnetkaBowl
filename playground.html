@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mosh Website</title>
+  <meta name="description" content="Deploy your website in less than 60 sec.">
+  <meta property="og:title" content="Moshify">
+  <meta property="og:description" content="website">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://moshified.com">
+  <title>Winnetka-Website</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
- 
-  <script src="js/main.js"></script>
-</body>
-</html>
 
-
-<!--Carousel-->
-<section class="carousel">
-  <button class="slider-button slider-button-prev" data-slide-direction="prev">&#8592</button>
-  <button class="slider-button slider-button-next" data-slide-direction="next">&#8594</button>
-  <ul class="slides">
-    <li class="slide" data-active-slide>
-      <img src="https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg?w=1060&t=st=1670093487~exp=1670094087~hmac=0efe31cac4ad9457031ff3a8b14f9be760a038fae38f101b8a292c1f766e725e" alt="Nature Image #1" />
-    </li>
-    <li class="slide">
-      <img src="https://img.freepik.com/free-photo/vestrahorn-mountains-stokksnes-iceland_335224-667.jpg?w=1060&t=st=1670093535~exp=1670094135~hmac=27728351e326c808a35c161c98c1d8ff9e6328c4ceb471c2725c4cc3cf94c0c2" alt="Nature Image #2" />
-    </li>
-    <li class="slide">
-      <img src="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?w=900&t=st=1670093563~exp=1670094163~hmac=53dd76fac233cfc81416be6e48979f21ca375c70470fba4b50eea93c9e27cee9" alt="Nature Image #3" />
-    </li>
-  </ul>
-  <div class="slides-circles">
-    <div data-active-slide></div>
-    <div></div>
-    <div></div>
+<section class="carousel-wraper">
+  <div class="container">
+    <div class="carousel">
+      <button class="slider-button slider-button-prev" data-slide-direction="prev">&#8592</button>
+      <button class="slider-button slider-button-next" data-slide-direction="next">&#8594</button>
+      <ul class="block slides">
+        <li class="slide" data-active-slide>
+          <img class="slide-img" src="images/QR Code.jpg" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/league plyer.jpg" alt="Nature Image #3" />       
+         </li>
+        <li class="slide">
+          <img src="images/Happy-Hour-4x6-1.webp" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/bowlingshoes and ball.webp" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/cosmic-bowling-planet_92172-45.avif" alt="Nature Image #3" />        
+        </li>
+        <li class="slide">
+          <img src="images/closed-4th-of-july-coopers-header.jpg" alt="Nature Image #3" />
+        </li>
+      </ul>
+      <div class="slides-circles">
+        <div data-active-slide></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      </div>
   </div>
-</section>
+  </section>
+
+  <script src="/js/main.js"></script>
