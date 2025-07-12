@@ -474,27 +474,22 @@ font-size: 3rem;
 color: #fff;
 }
 
-.block--skewed-right{
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-}
 
-.block--skewed-left{
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
+.hero__img{
+    max-width: 450px;
+}
 
 @media screen and (min-width: 768px){
 .hero-block{
     max-height: 600px;
 }
 
-.hero-img-wraper >img{
+/* .hero-img-wraper >img{
     max-width: 100%;
     max-height: 100%;
     transform: translateX(140px);
-}
+} */
 
 .hero__slogan{
 max-width: 60rem;
@@ -588,46 +583,46 @@ margin: 0;
 
 
 /*Hero*/
-
-
-.hero__image{
-    width:100%;
+.hero{
+    padding-top: 0;
 }
 
 .hero__content{
     display: none;
+ 
 }
+
+.hero__tagline{
+    font-size: 2.5rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    text-align: center;
+    margin:0  8rem;
+}
+
+.hero__image, .hero__slogan {
+    width:100%;
+    
+}
+
+
+
 
 @media screen and (min-width: 768px) {
-
-    .hero{
-        padding-top: 0;
-    }
-    
-    .hero__content{
-        display: block;
-       padding-top: 12rem;
-    }
-
-    .hero__tagline{
-        font-size: 2.5rem;
-        color: #b9c3cf;
-        letter-spacing: 1px;
-        text-align: center;
-        margin:0  8rem;
-    }
-
     .hero__image{
         width:100%;
-        /* margin-left: 10rem; */
+       
     }
 
-    .hero__slogan{
-    width: 100%;
-
+    .hero__content{
+        display: block;
+        margin-top: 10rem;
+     
     }
+
 
 }
+
 
 /*Domain Block*/
 
@@ -782,9 +777,10 @@ justify-items:baseline;
 .map-wrapper{
     margin: auto 0;
     align-items: center;
-    margin: 50px;
+    margin: 5px;
     }
     
+
     
     .directions{
     text-align: center;
@@ -810,6 +806,8 @@ justify-items:baseline;
         @media screen and (min-width:768px) {
     .directions{
         display: block;
+        margin: 0;
+        padding: 0;
     }
     
     .map{
@@ -824,6 +822,7 @@ justify-items:baseline;
 
 .carousel-wraper{
     background: var(--clr-winnetka-red);
+   display: inline-block;
 }
 
 .carousel {
