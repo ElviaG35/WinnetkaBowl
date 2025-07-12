@@ -486,9 +486,9 @@ color: #fff;
 
 
 @media screen and (min-width: 768px){
-/* .hero-block{
+.hero-block{
     max-height: 600px;
-} */
+}
 
 .hero-img-wraper >img{
     max-width: 100%;
