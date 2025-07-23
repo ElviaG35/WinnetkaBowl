@@ -11,7 +11,7 @@
 }
 
 .block
-*, *::after, *::before{
+* {
     box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ font-size: 62.5%;
 
 body{
     font-family:Inter, Arial, Helvetica, sans-serif ;
-    font-size: 2.4rem;
+    font-size: 1.75rem;
     line-height: 1.5;
     color:var(--clr-body);
     overflow-x:hidden; 
@@ -54,7 +54,7 @@ h3 {
 }
 
 h1{
-    font-size: 12rem;
+    font-size: 10rem;
 }
 
 h2{
@@ -214,6 +214,7 @@ color:var(--clr-heading)
     height: 2.5rem;
     margin-right: 1rem;
     vertical-align: middle;
+    
 }
 
 .btn--primary{
@@ -277,45 +278,11 @@ color: #fff;
 
 
 
-/*cards*/
-
-.card{
-border-radius: 7px;
-box-shadow: 0 0 20px 10px #f3f3f3;
-overflow: hidden;
-}
-
-
-.card__header,
-.card__body{
-padding: 2rem 3rem;
-}
-
-.card--primary .card__header{
-background: var(--clr-primary);
-color:#f3f3f3;
-}
-
-.card--secondary .card__header{
-background: var(--clr-secondary);
-color:#f3f3f3;
-}
-
-.card--primary .badge--primary{
-    background: #126de4;
-}
-.card--secondary .badge--secondary{
-background:#02cdf1;
-
-}
-
-
-
-
-
 /*Grids*/
 .grid{
 display: grid;}
+
+
 
 @media screen and (min-width: 1024px){
 
@@ -334,6 +301,8 @@ display: grid;}
         grid-template-columns: repeat(3,1fr);
     }
 }
+
+
 }
 
 
@@ -376,9 +345,6 @@ font-size: 3rem;
 }
 
 
-
-
-
 .callout .btn {
     align-self: center;
     justify-self: center;
@@ -392,8 +358,8 @@ font-size: 3rem;
     background-color:var(--clr-winnetka-red);
     border-radius: 3px;
     padding: 2rem 2rem;
-    margin: 20px;
-    text-align: center;
+    margin: 0;
+    text-align: center;    
 }
 
 @media screen and (min-width:768px){
@@ -410,8 +376,12 @@ font-size: 3rem;
     margin: 0 2rem;
 }
 
-
+.callout-double-body{
+    padding-bottom: 2rem;
 }
+}
+
+
 
 /*Collapsables*/
 
@@ -476,36 +446,11 @@ color: #fff;
 
 
 
-.hero__img{
-    max-width: 450px;
-}
-
-@media screen and (min-width: 768px){
-.hero-block{
-    max-height: 600px;
-}
-
-/* .hero-img-wraper >img{
-    max-width: 100%;
-    max-height: 100%;
-    transform: translateX(140px);
-} */
-
-.hero__slogan{
-max-width: 60rem;
-
-}
-
-}
-
-
-
-
 /*nav*/
 .nav__brand img{
     width: 100%;
     max-width: 180px;
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 .nav{
@@ -521,6 +466,7 @@ max-width: 60rem;
     width: 100%;
     margin: 0;
     font-weight: 600;
+    font-size: 1.75rem;
 }
 
 .nav__item{
@@ -535,7 +481,7 @@ max-width: 60rem;
 
 
 .nav__item>a:hover{
-    color:var(--clr-primary);
+    color:var(--clr-primary-red);
     
 }
 
@@ -566,7 +512,7 @@ margin: 0;
     .nav__list{
         width: auto;
         display: flex;
-        font-size: 2rem;
+        font-size: 2.25rem;
         max-height: 100%;
         opacity: 1;
     }
@@ -610,14 +556,14 @@ margin: 0;
 
 @media screen and (min-width: 768px) {
     .hero__image{
-        width:100%;
-       
+    width: 100%;
+    transform: translatey(40px);
+    padding-left: 20rem;
     }
 
     .hero__content{
-        display: block;
-        margin-top: 10rem;
-     
+    display: block;
+    margin-top: 3rem;
     }
 
 
@@ -675,8 +621,8 @@ margin: 1rem 0;
 }
 
 .feature{
-    gap: 4rem 2rem;
-    margin: 12rem 0;
+    gap: 10rem;
+    margin: 3rem, 0;
 }
 
 
@@ -695,6 +641,8 @@ margin: 1rem 0;
         padding-left: 7rem;
     }
 
+ 
+
 }
 
 /*Price-Block*/
@@ -708,10 +656,10 @@ margin: 1rem 0;
 
 .showcase-container{
     background-image: url(/images/bowling-pin-svgrepo-com.svg);
-    background-size: 20rem;
+    background-size: 7rem;
     background-repeat: space;
     position: relative; 
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 }
 
@@ -744,6 +692,14 @@ justify-items:baseline;
 
 @media  screen and (min-width:768px) 
 {
+    .showcase-container{
+        background-image: url(/images/bowling-pin-svgrepo-com.svg);
+        background-size: 15rem;
+        position: relative; 
+        padding: 5rem 3rem;
+        margin: 0;
+
+    }
 
     .block-showcase .grid{
         grid-template-columns: 50% 50%;
@@ -765,6 +721,11 @@ justify-items:baseline;
     
     .media__title{
         line-height: 3.5rem;
+    }
+
+    .callout__double{
+        display: flex;
+
     }
 }
 
